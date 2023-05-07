@@ -158,13 +158,13 @@ class _HomeScreenState extends State<HomeScreen> {
                   mainAxisSize: MainAxisSize.max,
                   children: [
                     IconButton(
-                      icon: Icon(Icons.article),
+                      icon: Icon(Icons.arrow_back),
                       onPressed: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  HomeScreen()), //to be replaced with TransactionList method
+                                  TransactionList()), //to be replaced with TransactionList method
                         );
                       },
                       color: Color(0xff212435),
@@ -195,7 +195,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  HomeScreen()), //to be replaced with TransactionMake method
+                                  TransactionMake()), //to be replaced with TransactionMake method
                         );
                       },
                       color: Color(0xff212435),
@@ -226,7 +226,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  HomeScreen()), //to be replaced with PayBills method
+                                  PayBills()), //to be replaced with PayBills method
                         );
                       },
                       color: Color(0xff212435),
@@ -257,7 +257,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           context,
                           MaterialPageRoute(
                               builder: (context) =>
-                                  HomeScreen()), //to be replaced with AccountInfo method
+                                  AccountInfo()), //to be replaced with AccountInfo method
                         );
                       },
                       color: Color(0xff212435),
